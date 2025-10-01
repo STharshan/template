@@ -43,18 +43,18 @@ const ScrollingTestimonials = () => {
         {[...testimonials, ...testimonials].map((t, index) => (
           <div
             key={index}
-            className="min-w-[300px] sm:min-w-[350px] md:min-w-[400px] bg-white text-dark dark:bg-black dark:text-white p-6 rounded shadow-md"
+            className="min-w-[300px] sm:min-w-[350px] md:min-w-[400px] bg-white text-black dark:bg-black dark:text-white p-6 rounded shadow-md"
           >
             {/* Quote */}
-            <p className="text-sm mb-4 text-light">"{t.quote}"</p>
+            <p className="text-sm mb-4">"{t.quote}"</p>
 
             {/* Author */}
-            <p className="font-bold text-sm uppercase text-dark dark:text-white">
+            <p className="font-bold text-sm uppercase">
               {t.author}
             </p>
 
             {/* Source */}
-            <p className="text-xs text-light">Google Reviews</p>
+            <p className="text-xs">Google Reviews</p>
           </div>
         ))}
       </div>
