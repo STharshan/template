@@ -24,7 +24,7 @@ const services = [
     path: "/services/mot",
   },
   {
-    title: "WHEEL ALIGNMENT",
+    title: "Vehicle Wrapping",
     desc: "We provide wheel alignment with the added benifit of improved vehicle perfomance and tire longvity",
     image: "/paint.webp",
     path: "/services/wheel-alignment",
@@ -36,13 +36,13 @@ const services = [
     path: "/services/window-tint",
   },
   {
-    title: "BELTS/CHAINS",
+    title: "Specialist Coatings",
     desc: "Experts in timing chains, timing belts and one of the few wet timing chain specialist",
     image: "/shine.webp",
     path: "/services/belts-chains",
   },
   {
-    title: "DIAGNOSTICS",
+    title: "Graphics",
     desc: "We offer the laest dealer-level diagnostics",
     image: "/homepaint.avif",
     path: "/services/diagnostics",
