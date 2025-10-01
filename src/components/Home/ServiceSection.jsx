@@ -138,11 +138,19 @@ const ServiceSection = () => {
                 data-aos-delay={index * 150} // staggered animation for each card
               >
                 {/* Image */}
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
+                <div className="max-w-sm mx-auto">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="absolute inset-0 w-full h-full object-cover"
+                    onError={(e) => {
+                      e.currentTarget.onerror = null;
+                      e.currentTarget.src = "/logo.png"; // fallback logo
+                    }}
+                  />
+
+                </div>
+
 
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-overlay dark:bg-overlay/70 hover:bg-overlay/60 dark:hover:bg-overlay/50 transition-all duration-300"></div>
