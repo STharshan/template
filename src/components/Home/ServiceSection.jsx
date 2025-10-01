@@ -152,7 +152,7 @@ const ServiceSection = () => {
                   <h3 className="text-lg font-bold text-primary mb-2">
                     {service.title}
                   </h3>
-                  <p className="text-sm text-light mb-4">{service.desc}</p>
+                  <p className="text-sm text-white mb-4">{service.desc}</p>
                   <Link to={service.path}>
                     <button className="mt-auto px-4 py-2 text-xs border border-light rounded-full font-semibold cursor-pointer
                       bg-overlay dark:bg-overlay/30 hover:bg-primary dark:hover:bg-primary

@@ -14,7 +14,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative w-full min-h-screen text-white mb-20">
+    <section className="relative w-full min-h-screen text-white mb-17">
       {/* Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
@@ -50,7 +50,7 @@ const HeroSection = () => {
         </p>
 
         {/* Sub Text */}
-        <p className="mt-5 text-xl sm:text-xl text-light max-w-xs" data-aos="fade-up" data-aos-delay="400">
+        <p className="mt-5 text-xl sm:text-xl text-white max-w-xs" data-aos="fade-up" data-aos-delay="400">
           Dealer level service at a fraction of the cost
         </p>
 
@@ -96,13 +96,13 @@ const HeroSection = () => {
           </div>
 
           {/* TRC Logo */}
-          <div className="flex items-center order-2 sm:order-1">
+          {/* <div className="flex items-center order-2 sm:order-1">
             <img
               src="trc.png"
               alt="TRC Logo"
               className="w-42 h-20 object-contain md:w-40 md:h-20"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

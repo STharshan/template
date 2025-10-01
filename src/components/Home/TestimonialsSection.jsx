@@ -13,20 +13,20 @@ const TestimonialsSection = () => {
   }, []);
 
   return (
-    <section className="bg-light dark:bg-dark px-4 py-16 transition-colors">
+    <section className="bg-white dark:bg-black px-4 py-16 transition-colors">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         {/* Left Side */}
         <div data-aos="fade-right" data-aos-delay="100">
           {/* Subtitle */}
           <div className="mb-4 flex items-center space-x-2">
             <span className="w-6 h-px bg-primary rotate-135 mt-3"></span>
-            <span className="text-light dark:text-dark uppercase text-sm tracking-widest font-bold">
+            <span className="text-black dark:text-white uppercase text-sm tracking-widest font-bold">
               Raving Reviews
             </span>
           </div>
 
           {/* Heading */}
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6 leading-snug text-light dark:text-dark">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6 leading-snug text-black dark:text-white">
             THOUSANDS OF <br />HAPPY DRIVERS
           </h2>
 
