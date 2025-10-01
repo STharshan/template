@@ -71,7 +71,7 @@ const ServiceSection = () => {
   };
 
   return (
-    <section className="py-16 px-4 bg-white dark:bg-black relative transition-colors duration-300">
+    <section className="py-25 px-4 bg-white dark:bg-black relative transition-colors duration-300">
       <div className="max-w-7xl mb-20 mx-auto relative">
         {/* Section Title */}
         <h2
@@ -131,9 +131,9 @@ const ServiceSection = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="relative min-w-[300px] md:min-w-[400px] h-[420px] rounded-lg shadow-lg border-primary
-             hover:shadow-primary hover:border-primary/80 overflow-hidden group flex-shrink-0
-             hover:scale-105 active:scale-105 bg-white dark:bg-black/90 transition-all duration-300"
+                className="relative min-w-[300px] md:min-w-[400px] h-[420px] rounded-lg shadow-lg border-primary border
+             hover:shadow-primary hover:border-primary/80 overflow-hidden group flex-shrink-0 border-primary hover:border-primary/80
+             hover:scale-105 active:scale-105 bg-white hover:shadow-primary border-primary hover:border-primary/80 dark:bg-black/90 transition-all duration-300"
                 data-aos="fade-up"
                 data-aos-delay={index * 150} // staggered animation for each card
               >
