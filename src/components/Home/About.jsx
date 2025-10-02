@@ -24,7 +24,7 @@ const AboutSection = () => {
           <p className="text-lg uppercase text-gray-800 dark:text-white tracking-widest mb-2">
             / About
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4 uppercase leading-snug">
+          <h2 className="text-3xl sm:text-5xl font-semibold  tracking-wide text-primary mb-4 uppercase leading-snug">
             Dedicated <br />to Perfection
           </h2>
 

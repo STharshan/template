@@ -108,7 +108,7 @@ const ServiceSection = () => {
           className="text-center text-3xl md:text-4xl font-bold text-primary dark:text-primary mb-2 uppercase"
           data-aos="fade-down"
         >
-          Our Services
+          Our <span className="dark:text-white text-gray-700">Services</span> 
         </h2>
         <p
           className="text-center text-lg dark:text-white mb-8"
