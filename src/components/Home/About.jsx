@@ -12,6 +12,14 @@ const AboutSection = () => {
     });
   }, []);
 
+  const testimonials = [
+  {
+    text: "Fast delivery and outstanding results. Thank you!",
+    name: "Sim B",
+  },
+
+]
+
   return (
     <section 
       className="dark:bg-black bg-white px-4 sm:px-6 lg:px-12 xl:px-20 py-16 md:py-24 transition-colors"
@@ -46,20 +54,26 @@ const AboutSection = () => {
 
           {/* Learn More Button */}
           <button
-            className="dark:bg-white bg-black text-black dark:text-white font-semibold px-6 py-3 rounded-full inline-flex items-center gap-2 hover:opacity-90 transition"
+            className="dark:bg-white bg-black text-black group dark:text-white font-semibold px-6 py-3 rounded-full inline-flex items-center gap-2 hover:opacity-90 transition"
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            <FaArrowRight className="text-primary" />
-            <span className="text-white dark:text-black">LEARN MORE</span>
+            <FaArrowRight className="text-primary transition-transform duration-300 group-hover:-translate-x-2" />
+            <span className="text-white dark:text-black transition-transform duration-300 group-hover:translate-x-2">LEARN MORE</span>
           </button>
 
           {/* Testimonial */}
-          <div className="mt-10 text-md dark:text-white text-black" data-aos="fade-up" data-aos-delay="400">
-            <p className="italic mb-2">
-              "Fast delivery and outstanding results. Thank you!"
-            </p>
-            <p className="text-black dark:text-white font-medium">Sim B</p>
+       <div className="mt-10 space-y-6" data-aos="fade-up" data-aos-delay="400">
+            {testimonials.map((t, index) => (
+              <div key={index} className="flex items-center gap-4">
+                <div>
+                  <p className="italic text-sm text-gray-700 dark:text-gray-300 mb-1">
+                    "{t.text}"
+                  </p>
+                  <p className="text-black dark:text-white font-medium text-sm">{t.name}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 

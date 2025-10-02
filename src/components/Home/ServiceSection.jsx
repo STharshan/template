@@ -196,8 +196,8 @@ const ServiceSection = () => {
                       bg-overlay dark:bg-overlay/30 hover:bg-primary dark:hover:bg-primary
                       text-primary dark:text-primary hover:text-dark transition-all duration-300"
                     >
-                      <FaArrowRight className="inline mr-2" />
-                      EXPLORE
+                      <FaArrowRight className="inline mr-2 transition-transform duration-300 group-hover:-translate-x-1" />
+                      <span className="transition-transform duration-300 group-hover:translate-x-2">EXPLORE</span>
                     </button>
                   </Link>
                 </div>

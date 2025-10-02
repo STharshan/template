@@ -1,15 +1,4 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700&display=swap');
-
-/* Option 1: Montserrat */
-
-
-/* Option 3: Saira */
-@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;600;700&display=swap');
-
-.text {
-  font-family: 'Saira';
-}
 
 
 
@@ -27,7 +16,6 @@ html, body {
   width: 100%;
   overflow-x: hidden; 
   scroll-behavior: smooth;
-  font-family: 'Saira';
 }
 
 .scrollbar-hide::-webkit-scrollbar {
