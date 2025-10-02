@@ -17,7 +17,7 @@ const AboutSection = () => {
       className="dark:bg-black bg-white px-4 py-16 md:py-24 transition-colors"
       data-aos="fade-up"
     >
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 mt-20 items-center">
         
         {/* Left Text Side */}
         <div data-aos="fade-right">
@@ -67,9 +67,9 @@ const AboutSection = () => {
         <div className="relative" data-aos="fade-left">
           <div className="relative z-10 rounded-lg shadow-lg">
             <img
-              src="/logo.png"
+              src="/image.png"
               alt="Spray Work"
-              className="w-full object-cover rounded-sm"
+              className="w-full object-cover h-150 rounded-sm"
             />
 
             {/* Right full border */}

@@ -72,8 +72,8 @@ const ServiceSection = () => {
 
   return (
     <section className="py-25 px-4 bg-white dark:bg-black relative transition-colors duration-300">
-       <div className="absolute left-0 w-full z-10 bg-black  border-gray-700" data-aos="fade-up" data-aos-delay="700">
-        <div className="mx-auto backdrop-blur-sm flex flex-col sm:flex-row items-center justify-center px-6 py-3 text-white text-sm font-semibold shadow-lg">
+       <div className="absolute left-0 w-full z-10  border-gray-700" data-aos="fade-up" data-aos-delay="700">
+        <div className="mx-auto backdrop-blur-sm flex flex-col sm:flex-row items-center justify-center px-6 py-3 text-white text-sm font-semibold">
           {/* Rating Section */}
           <div className="flex items-center gap-3 dark:bg-black border border-gray-600 px-4 py-2 rounded-full order-1 sm:order-2 mb-3 sm:mb-0">
             {/* Stars */}
@@ -85,9 +85,9 @@ const ServiceSection = () => {
               <span>★</span>
             </div>
             {/* Rating Text */}
-            <span className="text-white text-sm font-medium">4.7/5 from</span>
+            <span className=" text-sm font-medium text-black dark:text-white">4.7/5 from</span>
             {/* Reviews Badge */}
-            <span className="bg-secondary border border-gray-600 px-3 py-1 rounded-full text-white text-xs font-medium">
+            <span className="bg-secondary border text-black dark:text-white border-gray-600 px-3 py-1 rounded-full text-xs font-medium">
               84+ Reviews
             </span>
           </div>
