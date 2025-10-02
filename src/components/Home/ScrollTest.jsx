@@ -14,7 +14,7 @@ const AboutSection = () => {
 
   return (
     <section 
-      className="dark:bg-black bg-white px-4 py-16 md:py-24 transition-colors"
+      className="dark:bg-black bg-white px-4 sm:px-6 lg:px-12 xl:px-20 py-16 md:py-24 transition-colors"
       data-aos="fade-up"
     >
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 mt-20 items-center">
