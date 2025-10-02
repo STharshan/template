@@ -26,7 +26,7 @@ const HeroSection = () => {
       />
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 z-0"></div>
+      <div className="absolute bg-black/50 inset-0 z-0"></div>
 
       {/* Centered Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
