@@ -24,21 +24,22 @@ const AboutSection = () => {
           <p className="text-lg uppercase text-gray-800 dark:text-white tracking-widest mb-2">
             / About
           </p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4 leading-snug">
-            FOUR DECADES<br />IN THE GAME
+          <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4 uppercase leading-snug">
+            Dedicated <br />to Perfection
           </h2>
+
           <p className="text-black dark:text-white text-sm mb-6 max-w-md">
-            Receive exceptional service and unparalleled skill with every repair.
+            Experience top-notch service and unmatched <br /> expertise in every repair.
           </p>
 
           {/* Badge Row */}
           <div className="flex flex-wrap items-center gap-4 mb-8" data-aos="zoom-in" data-aos-delay="200">
             <div className="flex items-center gap-2 text-sm font-semibold dark:text-white text-black">
-              <FaArrowRight className="bg-rating text-black rounded-sm p-1 w-5 h-5" />
+              <FaArrowRight className="bg-rating text-black dark:text-white rounded-sm p-1 w-5 h-5" />
               Reliable Work
             </div>
             <div className="flex items-center gap-2 text-sm font-semibold dark:text-white text-black">
-              <FaArrowRight className="bg-rating text-black rounded-sm p-1 w-5 h-5" />
+              <FaArrowRight className="bg-rating text-black dark:text-white rounded-sm p-1 w-5 h-5" />
               Trusted Technicians
             </div>
           </div>

@@ -72,7 +72,37 @@ const ServiceSection = () => {
 
   return (
     <section className="py-25 px-4 bg-white dark:bg-black relative transition-colors duration-300">
-      <div className="max-w-7xl mb-20 mx-auto relative">
+       <div className="absolute left-0 w-full z-10 bg-black  border-gray-700" data-aos="fade-up" data-aos-delay="700">
+        <div className="mx-auto backdrop-blur-sm flex flex-col sm:flex-row items-center justify-center px-6 py-3 text-white text-sm font-semibold shadow-lg">
+          {/* Rating Section */}
+          <div className="flex items-center gap-3 dark:bg-black border border-gray-600 px-4 py-2 rounded-full order-1 sm:order-2 mb-3 sm:mb-0">
+            {/* Stars */}
+            <div className="flex text-yellow-400 text-lg">
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+            {/* Rating Text */}
+            <span className="text-white text-sm font-medium">4.7/5 from</span>
+            {/* Reviews Badge */}
+            <span className="bg-secondary border border-gray-600 px-3 py-1 rounded-full text-white text-xs font-medium">
+              84+ Reviews
+            </span>
+          </div>
+
+          {/* TRC Logo */}
+          {/* <div className="flex items-center order-2 sm:order-1">
+            <img
+              src="trc.png"
+              alt="TRC Logo"
+              className="w-42 h-20 object-contain md:w-40 md:h-20"
+            />
+          </div> */}
+        </div>
+      </div>
+      <div className="max-w-7xl mb-20 mt-20 mx-auto relative">
         {/* Section Title */}
         <h2
           className="text-center text-3xl md:text-4xl font-bold text-primary dark:text-primary mb-2 uppercase"
@@ -85,7 +115,7 @@ const ServiceSection = () => {
           data-aos="fade-up"
           data-aos-delay="100"
         >
-          From minor fixes to major repairs, we’ve got you covered.
+          From minor fixes to major repairs, <br /> we’ve got you covered.
         </p>
 
         <div className="relative overflow-hidden">
@@ -131,7 +161,7 @@ const ServiceSection = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="relative min-w-[300px] md:min-w-[400px] h-[420px] rounded-lg shadow-lg border-primary border
+                className="relative min-w-[300px] md:min-w-[400px] h-[520px] rounded-lg shadow-lg border-primary border
              hover:shadow-primary hover:border-primary/80 overflow-hidden group flex-shrink-0 border-primary hover:border-primary/80
              hover:scale-105 active:scale-105 bg-white hover:shadow-primary border-primary hover:border-primary/80 dark:bg-black/90 transition-all duration-300"
                 data-aos="fade-up"

@@ -19,6 +19,7 @@
 .text-light { color: var(--color-text) !important; }
 .text-dark { color: var(--color-text-dark) !important; }
 .text-rating { color: var(--color-rating); }
+.bg-rating {color: var(--color-primary);}
 
 /* Background helpers */
 .bg-primary { background-color: var(--color-primary) !important; }
