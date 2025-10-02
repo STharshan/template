@@ -81,7 +81,7 @@ const ServiceSection = () => {
           Our Services
         </h2>
         <p
-          className="text-center text-light mb-8"
+          className="text-center text-lg dark:text-white mb-8"
           data-aos="fade-up"
           data-aos-delay="100"
         >

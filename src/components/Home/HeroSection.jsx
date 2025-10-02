@@ -14,7 +14,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative w-full min-h-screen text-white mb-17">
+    <section className="relative w-full h-[100vh] bg-black text-white mb-17">
       {/* Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
@@ -26,7 +26,7 @@ const HeroSection = () => {
       />
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/50 z-0"></div>
+      <div className="absolute inset-0 z-0"></div>
 
       {/* Centered Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
@@ -75,10 +75,10 @@ const HeroSection = () => {
       </div>
 
       {/* Bottom Info Bar */}
-      <div className="absolute left-0 w-full z-10 border-t border-gray-700" data-aos="fade-up" data-aos-delay="700">
-        <div className="mx-auto bg-black backdrop-blur-sm flex flex-col sm:flex-row items-center justify-center px-6 py-3 text-white text-sm font-semibold shadow-lg">
+      <div className="absolute left-0 w-full z-10 border-t bg-black  border-gray-700" data-aos="fade-up" data-aos-delay="700">
+        <div className="mx-auto backdrop-blur-sm flex flex-col sm:flex-row items-center justify-center px-6 py-3 text-white text-sm font-semibold shadow-lg">
           {/* Rating Section */}
-          <div className="flex items-center gap-3 bg-black border border-gray-600 px-4 py-2 rounded-full order-1 sm:order-2 mb-3 sm:mb-0">
+          <div className="flex items-center gap-3 dark:bg-black border border-gray-600 px-4 py-2 rounded-full order-1 sm:order-2 mb-3 sm:mb-0">
             {/* Stars */}
             <div className="flex text-yellow-400 text-lg">
               <span>★</span>
