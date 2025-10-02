@@ -49,7 +49,7 @@ const AboutSection = () => {
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            <FaArrowRight className="text-rating" />
+            <FaArrowRight className="text-primary" />
             <span className="text-white dark:text-black">LEARN MORE</span>
           </button>
 
