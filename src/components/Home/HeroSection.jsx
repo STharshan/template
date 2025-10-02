@@ -14,7 +14,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative w-full h-[100vh] bg-black text-white mb-17">
+    <section className="relative w-full h-[100vh] bg-black text-white">
       {/* Background Video */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
