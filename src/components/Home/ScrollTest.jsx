@@ -5,22 +5,22 @@ import "aos/dist/aos.css";
 const testimonials = [
   {
     quote:
-      "Got a starlight headliner done from them and it was done quickly and to a high standard. Would highly recommend",
-    author: "EEVAN S",
+      "We recently had our Audi windows tinted, not one fault & amazing service and price.Inquired about our home windows so that the TV doesn't get damaged from the sun light. Also then decided on getting the upstairs windows done- as such a great job!",
+    author: "Sarah Mason",
   },
   {
     quote:
-      "Toni and his team are lovely. Very friendly and worked well within the timeframe agreed and were very cost-effective. Absolutely recommend this team 👍.",
-    author: "RENOL K",
+      "Did a great job on my rear lights, even better price.",
+    author: "Andrew Beveridge",
   },
   {
-    quote: "Exceptional service! My car looks as good as new. Highly recommend!",
-    author: "KIRK S",
+    quote: "My brother has just had his car done, very professional, excellent service, would highly recommend them.",
+    author: "tracey lloyd",
   },
   {
     quote:
-      "Fantastic service. Had my Range Rover serviced by these guys, quick turn around good pricing. Will definitely be a repeat customer",
-    author: "TARVINDER B",
+      "Excellent service had 2 cars in there and no problems as of yet got my next car ready to go in",
+    author: "BMJ Killeen",
   },
 ];
 
