@@ -1,80 +1,86 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useEffect } from 'react';
+import { FaArrowRight } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-const testimonials = [
-  {
-    quote:
-      "We recently had our Audi windows tinted, not one fault & amazing service and price.Inquired about our home windows so that the TV doesn't get damaged from the sun light. Also then decided on getting the upstairs windows done- as such a great job!",
-    author: "Sarah Mason",
-  },
-  {
-    quote:
-      "Did a great job on my rear lights, even better price.",
-    author: "Andrew Beveridge",
-  },
-  {
-    quote: "My brother has just had his car done, very professional, excellent service, would highly recommend them.",
-    author: "tracey lloyd",
-  },
-  {
-    quote:
-      "Excellent service had 2 cars in there and no problems as of yet got my next car ready to go in",
-    author: "BMJ Killeen",
-  },
-];
-
-const ScrollingTestimonials = () => {
+const AboutSection = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: true,
+      duration: 1000, // Animation duration (ms)
+      easing: 'ease-in-out',
+      once: true, // Only animate once
     });
   }, []);
 
   return (
-    <section
-      className="bg-overlay py-16 overflow-hidden"
+    <section 
+      className="dark:bg-black bg-white px-4 py-16 md:py-24 transition-colors"
       data-aos="fade-up"
-      data-aos-delay="200"
     >
-      <div className="w-[200%] animate-scroll flex space-x-6">
-        {[...testimonials, ...testimonials].map((t, index) => (
-          <div
-            key={index}
-            className="min-w-[300px] sm:min-w-[350px] md:min-w-[400px] bg-white text-black dark:bg-black dark:text-white p-6 rounded shadow-md"
-          >
-            {/* Quote */}
-            <p className="text-sm mb-4">"{t.quote}"</p>
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        
+        {/* Left Text Side */}
+        <div data-aos="fade-right">
+          <p className="text-lg uppercase text-gray-800 dark:text-white tracking-widest mb-2">
+            / About
+          </p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4 leading-snug">
+            FOUR DECADES<br />IN THE GAME
+          </h2>
+          <p className="text-black dark:text-white text-sm mb-6 max-w-md">
+            Receive exceptional service and unparalleled skill with every repair.
+          </p>
 
-            {/* Author */}
-            <p className="font-bold text-sm uppercase">
-              {t.author}
-            </p>
-
-            {/* Source */}
-            <p className="text-xs">Google Reviews</p>
+          {/* Badge Row */}
+          <div className="flex flex-wrap items-center gap-4 mb-8" data-aos="zoom-in" data-aos-delay="200">
+            <div className="flex items-center gap-2 text-sm font-semibold dark:text-white text-black">
+              <FaArrowRight className="bg-rating text-black rounded-sm p-1 w-5 h-5" />
+              Reliable Work
+            </div>
+            <div className="flex items-center gap-2 text-sm font-semibold dark:text-white text-black">
+              <FaArrowRight className="bg-rating text-black rounded-sm p-1 w-5 h-5" />
+              Trusted Technicians
+            </div>
           </div>
-        ))}
-      </div>
 
-      {/* Scrolling Animation */}
-      <style jsx="true">{`
-        @keyframes scroll {
-          0% {
-            transform: translateX(0%);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-        .animate-scroll {
-          animation: scroll 30s linear infinite;
-        }
-      `}</style>
+          {/* Learn More Button */}
+          <button
+            className="dark:bg-white bg-black text-black dark:text-white font-semibold px-6 py-3 rounded-full inline-flex items-center gap-2 hover:opacity-90 transition"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <FaArrowRight className="text-rating" />
+            <span className="text-white dark:text-black">LEARN MORE</span>
+          </button>
+
+          {/* Testimonial */}
+          <div className="mt-10 text-md dark:text-white text-black" data-aos="fade-up" data-aos-delay="400">
+            <p className="italic mb-2">
+              "Fast delivery and outstanding results. Thank you!"
+            </p>
+            <p className="text-black dark:text-white font-medium">Sim B</p>
+          </div>
+        </div>
+
+        {/* Right Image Side */}
+        <div className="relative" data-aos="fade-left">
+          <div className="relative z-10 rounded-lg shadow-lg">
+            <img
+              src="/logo.png"
+              alt="Spray Work"
+              className="w-full object-cover rounded-sm"
+            />
+
+            {/* Right full border */}
+            <div className="absolute top-0 right-0 h-full w-[15px] bg-gradient-to-b from-transparent to-[var(--color-rating)]"></div>
+
+            {/* Bottom fixed half-border */}
+            <div className="absolute bottom-0 left-0 w-full h-[15px] bg-gradient-to-r from-transparent to-[var(--color-rating)]"></div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
 
-export default ScrollingTestimonials;
+export default AboutSection;
