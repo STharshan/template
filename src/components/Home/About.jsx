@@ -14,8 +14,10 @@ const AboutSection = () => {
 
   const testimonials = [
   {
-    text: "Fast delivery and outstanding results. Thank you!",
-    name: "Sim B",
+    text: `Great experience with this company.
+Fast, easy and reliable service from a reputable company. Great communication.
+Would recommend. Thanks lads!`,
+    name: "Mike Smith (Sax Liverpool/Manchester)",
   },
 
 ]
